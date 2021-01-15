@@ -1,0 +1,23 @@
+.boxes{
+	background-image: linear-gradient(#353A40,#16171B);
+	height: 400px;
+	width: 700px;
+	background-clip: content-box;
+	border-radius: 50px;
+	box-shadow: 5px 5px #1d1e20;
+	text-align: center;
+}
+.grid{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 30px;
+    background-image: linear-gradient(#27282c,#26272b);
+    padding-left: 2em;
+}
+.black{
+	height: 300px;
+	width: 600px;
+	background-color: black;
+	margin: auto;
+	margin-top: 0;
+}

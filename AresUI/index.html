@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Rover Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+      
+    <div class="row my-row justify-content-around">
+      <div class="col-md-4 gradient-border">
+          <div class="row">
+              <div class="col-md-12 my-col1 gradient-border direction-information">
+                  <div class="row">
+                      <div class="col-md-12 text-center" style="margin-top: 4%; font-size: 1.6rem;font-family: 'Bowlby One SC', cursive;">
+                          ARES ROBOTICS ROVER CONTROL
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 my-col2">
+                  <section class="content">
+                      <div class="box gauge--1">
+                        <div class="mask">
+                            <div class="semi-circle"></div>
+                            <div class="semi-circle--mask"></div>
+                        </div>
+                      </div>
+                  </section>
+                  <p class="direction-information" style="margin-left: 27%;">BATTERY LEFT</p>
+              </div>
+              <div class="col-md-6 my-col2">
+                  <section class="content">
+                      <div class="box gauge--1">
+                        <div class="mask">
+                            <div class="semi-circle"></div>
+                            <div class="semi-circle--mask"></div>
+                        </div>
+                      </div>
+                  </section>
+                  <p class="direction-information" style="margin-left: 27%;">FORWARD SPEED</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-7 gradient-border">
+          <div class="row">
+              <div class="col-md-12 my-col3 gradient-border">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <section class="content">
+                              <div class="box gauge--1">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                              </div>
+                          </section>
+                          <p class="direction-information" style="margin-left: 50%;">
+                              FR
+                          </p>
+                      </div>
+                      <div class="col-md-3">
+                          <section class="content">
+                              <div class="box gauge--1">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                              </div>
+                          </section>
+                          <p class="direction-information" style="margin-left: 50%;">
+                              FL
+                          </p>
+                      </div>
+                      <div class="col-md-3">
+                          <section class="content">
+                              <div class="box gauge--1">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                              </div>
+                          </section>
+                          <p class="direction-information" style="margin-left: 50%;">
+                              BL
+                          </p>
+                      </div>
+                      <div class="col-md-3">
+                          <section class="content">
+                              <div class="box gauge--1">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                              </div>
+                          </section>
+                          <p class="direction-information" style="margin-left: 50%;">
+                              BR
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 my-col3 gradient-border">Bottom region</div>
+          </div>
+      </div>
+  </div>
+  <div class="row my-row justify-content-around">
+      <div class="col-md-4 gradient-border">
+        <div class="row">
+            <div class="col-md-12 my-col1 gradient-border">
+                  <div class="row">
+                      <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one rover-control">Rover Control</a> </div>
+                      <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one camera-stream">Camera Stream</a> </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 my-col2">
+              <p class="main-info-distance">45.7 KM</p>
+              <p class="direction-information" style="margin-left:19%;">Distance travelled</p>
+            </div>
+            <div class="col-md-6 my-col2">
+            <p class="main-info">NE'51 Deg</p>
+            <div class="direction-information">
+              <span class="left">North</span><span class="right">East</span><br />
+              <span class="left">323.456</span><span class="right">34.643</span><br />
+              <br/>
+              <span class="left">South</span><span class="right">West</span><br />
+              <span class="left">323.456</span><span class="right">34.643</span><br />
+            </div>    
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 gradient-border">
+          <div class="row">
+              <div class="col-md-9 my-col4">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block">Gentle Left Turn 90</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block center-block">Hard Left Turn 90</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span>
+                                <button type="button" class="btn btn-primary pull-right btn-block">Gentle Right Turn 90</button>
+                              </span>
+                            </div>
+                      </div>
+
+                      <div class="col-md-4">
+                          <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block">Hard Right Turn 90</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block center-block">Left Turn 180</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span>
+                                <button type="button" class="btn btn-primary pull-right btn-block">Right Turn 180</button>
+                              </span>
+                            </div>
+                      </div>
+
+                      <div class="col-md-4">
+                          <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block">Left Turn 360</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block center-block">Right Turn 360</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span>
+                                <button type="button" class="btn btn-primary pull-right btn-block">Reverse</button>
+                              </span>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 my-col4">
+                  <div class="row">
+                      <div class="col-md-12 my-col3 gradient-border">
+                          <label class="switch" style="margin-left:33%;margin-top: 24%;">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                          </label>
+                        <p class="direction-information" style="margin-left:30%; margin-top: 10%;">Auto Pilot</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12 my-col3 gradient-border">
+                          <section class="content">
+                              <div class="box gauge--1">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                              </div>
+                          </section>
+                          <p class="direction-information" style="margin-left: 21%;">TEMPERATURE/HEAT</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script>require('./index.js')</script>
+  </body>
+</html>

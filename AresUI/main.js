@@ -1,7 +1,7 @@
 const electron= require('electron');
 const app= electron.app;
 const url=require("url");
-const BrowserWindow=electron.BrowserWindow;
+const {BrowserWindow}=electron;
 const path=require('path');
 let win1;
 function createWindow()

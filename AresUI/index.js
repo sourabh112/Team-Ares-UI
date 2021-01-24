@@ -1,5 +1,5 @@
 const electron=require('electron');
-const BrowserWindow=electron.remote.BrowserWindow;
+const {BrowserWindow}=electron.remote.BrowserWindow;
 const path=require('path');
 const url=require('url');
 const roverControl=document.getElementsByClassName("rover-control");

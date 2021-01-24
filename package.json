@@ -1,0 +1,23 @@
+{
+  "name": "Team-Ares-UI",
+  "version": "1.0.0",
+  "description": "Team Ares UI",
+  "main": "./AresUI/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourabh112/Team-Ares-UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourabh112/Team-Ares-UI/issues"
+  },
+  "homepage": "https://github.com/sourabh112/Team-Ares-UI#readme",
+  "dependencies": {
+    "electron": "^11.2.0"
+  }
+}

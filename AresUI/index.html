@@ -20,8 +20,8 @@
           <div class="row">
               <div class="col-md-12 my-col1 gradient-border direction-information">
                   <div class="row">
-                      <div class="col-md-12 text-center" style="margin-top: 4%; font-size: 1.6rem;font-family: 'Bowlby One SC', cursive;">
-                          ARES ROBOTICS ROVER CONTROL
+                      <div class="col-md-12 text-center" style="margin-top: 4%; font-size: 1.6rem;">
+                          <b>ARES ROBOTICS ROVER CONTROL</b>
                       </div>
                   </div>
               </div>
@@ -151,17 +151,29 @@
   <div class="row my-row justify-content-around">
       <div class="col-md-4 gradient-border">
         <div class="row">
-            <div class="col-md-12 my-col1 gradient-border">
+            <div class="col-md-12 my-col1 ">
                   <div class="row">
-                      <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one rover-control">Rover Control</a> </div>
-                      <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one camera-stream">Camera Stream</a> </div>
+                      <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one">Rover Control</a> </div>
+                      <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one ">Camera Stream</a> </div>
                   </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 my-col2">
-              <p class="main-info-distance">45.7 KM</p>
-              <p class="direction-information" style="margin-left:19%;">Distance travelled</p>
+
+              <div class="odometer">
+                <div class="digit">
+                <div class="digit-container digit-hundred">0 9 8 7 6 5 4 3 2 1 0</div>
+              </div>
+              <div class="digit">
+                <div class="digit-container digit-ten">0 9 8 7 6 5 4 3 2 1 0</div>
+              </div>
+              <div class="digit">
+                <div class="digit-container digit-one">0 9 8 7 6 5 4 3 2 1 0</div>
+              </div>
+            </div>
+
+              <p class="direction-information" style="margin-left: 13%;font-size: 1.3rem;">Distance Travelled</p>
             </div>
             <div class="col-md-6 my-col2">
             <p class="main-info">NE'51 Deg</p>
@@ -246,7 +258,6 @@
                   </div>
                   <div class="row">
                       <div class="col-md-12 my-col3 gradient-border" style="height: 10em;">
-                            <div class="container">
     <!-- <div class="card">
       <div class="box">
         <div class="percent">
@@ -262,7 +273,14 @@
       </div>
     </div>
   </div> -->
-                          <p class="direction-information" style="margin-left: 21%;">TEMPERATURE/HEAT</p>
+
+                          <label class="switch" style="margin-left:33%;margin-top: 24%;">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                          </label>
+                        <p class="direction-information" style="margin-left:32%; margin-top: 10%;">ON / OFF</p>
+
+
                       </div>
                   </div>
               </div>

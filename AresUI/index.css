@@ -238,8 +238,8 @@ transform: translateX(-50%) translateY(-50%) rotate(-25deg) !important;
 }
 .spacing-control-buttons
 {
-    margin-top:23%;
-    margin-bottom:23%;
+    margin-top:7%;   /* earlier values being 23% and 23%*/
+    margin-bottom:7%;
 }
 
 /* The switch - the box around the slider */

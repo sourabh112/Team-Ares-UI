@@ -11,17 +11,7 @@ cameraStream.addEventListener("click",()=>{
 
 function createNewBrowserWindow()
 {
-    win2= new BrowserWindow({
-        width:3000,
-        height:2000,
-        title:"Camera Stream",
-        webPreferences: {
-            
-            nodeIntegration: true,
-            enableRemoteModule:true,
-        }
-
-    });
+    
     win2.loadURL(url.format({
         pathname:path.join(__dirname,"stream.html"),
         protocol:"file",

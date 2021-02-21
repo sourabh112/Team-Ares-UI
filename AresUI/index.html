@@ -37,7 +37,7 @@
             <circle class="variable" cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-            <h2 class="variable_num">60<span>%</span></h2>
+            <h2 class="variable_num">0<span>%</span></h2>
           </div>
         </div>
         <h2 class="text">BATTERY LEFT</h2>
@@ -55,7 +55,7 @@
             <circle class="variable" cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-            <h2 class="variable_num">60<span>%</span></h2>
+            <h2 class="variable_num">0<span>%</span></h2>
           </div>
         </div>
         <h2 class="text">FORWARD SPEED</h2>
@@ -79,7 +79,7 @@
             <circle class="variable" cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-            <h2 class="variable_num">60<span>%</span></h2>
+            <h2 class="variable_num">0<span>%</span></h2>
           </div>
         </div>
         <h2 class="text">FR</h2>
@@ -97,7 +97,7 @@
             <circle class="variable" cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-            <h2 class="variable_num">60<span>%</span></h2>
+            <h2 class="variable_num">0<span>%</span></h2>
           </div>
         </div>
         <h2 class="text">FL</h2>
@@ -115,7 +115,7 @@
             <circle class="variable" cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-            <h2 class="variable_num">60<span>%</span></h2>
+            <h2 class="variable_num">0<span>%</span></h2>
           </div>
         </div>
         <h2 class="text">BL</h2>
@@ -132,7 +132,7 @@
             <circle class="variable" cx="70" cy="70" r="70"></circle>
           </svg>
           <div class="number">
-            <h2 class="variable_num">60<span>%</span></h2>
+            <h2 class="variable_num">0<span>%</span></h2>
           </div>
         </div>
         <h2 class="text">BR</h2>
@@ -154,7 +154,7 @@
             <div class="col-md-12 my-col1 ">
                   <div class="row">
                       <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one">Rover Control</a> </div>
-                      <div class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one ">Camera Stream</a> </div>
+                      <div onclick="Camera()" class="col-md-6"> <a href="#" class="btn btn-sm animated-button victoria-one ">Camera Stream</a> </div>
                   </div>
             </div>
         </div>
@@ -258,22 +258,6 @@
                   </div>
                   <div class="row">
                       <div class="col-md-12 my-col3 gradient-border" style="height: 10em;">
-    <!-- <div class="card">
-      <div class="box">
-        <div class="percent">
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle cx="70" cy="70" r="70"></circle>
-          </svg>
-          <div class="number">
-            <h2>60<span>%</span></h2>
-          </div>
-        </div>
-        <h2 class="text">Javascript</h2>
-      </div>
-    </div>
-  </div> -->
-
                           <label class="switch" style="margin-left:33%;margin-top: 24%;">
                               <input type="checkbox">
                               <span class="slider round"></span>
@@ -289,5 +273,15 @@
   </div>
     <script>require('./index.js')</script>
     <script type="text/javascript" src ="script.js"></script>
+    <script>
+      const electron = require('electron');
+      const {ipcRenderer} = electron;
+
+      function Camera() {
+        console.log("hello")
+        ipcRenderer.send('Changing',5)
+      }
+
+    </script>
   </body>
 </html>

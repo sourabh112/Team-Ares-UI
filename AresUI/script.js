@@ -1,7 +1,25 @@
-var variables = [80,50,30,10,90,95]
+var variables = [[0,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60,60],
+                  [0,30,31,28,29,28,30,31,29,30,31,32,29,28,30,32,33,34,33,33,32,33,34,36,32,35,36],
+                  [0,30,28,29,31,29,30,34,32,32,33,32,33,33,35,36,34,32,34,33,32,33,32,33,36,34,35],
+                  [0,30,29,31,28,29,30,32,34,33,32,33,32,33,36,34,35,30,31,32,29,28,30,32,33,35,36],
+                  [0,30,28,29,29,31,30,32,34,33,33,32,33,34,36,32,35,32,33,32,34,36,34,33,32,35,33],
+                  [0,30,29,28,29,31,30,32,33,32,34,36,34,33,32,35,33,34,32,32,33,32,33,33,35,36,34]]
 var variable_cir = document.getElementsByClassName('variable');
 var variable_num = document.getElementsByClassName('variable_num');
-for (var i = 0; i < variable_cir.length; i++) {
-	variable_cir[i].style.strokeDashoffset = (440 - (440 * variables[i]) / 100);
-	variable_num[i].innerHTML = variables[i]+"%"
-}
+
+var id = null;   
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 300);
+  function frame() {
+    if (pos == 26) {
+      clearInterval(id);
+    } else { 
+      for (var i = 0; i < variable_cir.length; i++) {
+      variable_cir[i].style.strokeDashoffset = (440 - (440 * variables[i][pos]) / 100);
+      variable_num[i].innerHTML = variables[i][pos]+"%"
+      console.log(i,pos,variables[i][pos])
+      }
+      pos++;
+    }
+  }

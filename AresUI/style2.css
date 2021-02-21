@@ -1,22 +1,22 @@
 .boxes{
 	background-image: linear-gradient(#353A40,#16171B);
-	height: 700px;
-	width: 400px;
+	height: 47vw;
+	width: 26.85vw;
 	background-clip: content-box;
-	border-radius: 50px;
-	box-shadow: 5px 5px #1d1e20;
+	border-radius: 3.35vw;
+	box-shadow: 0.335vw 0.335vw #1d1e20;
 	text-align: center;
 }
 .grid{
 	display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-row-gap: 30px;
+    grid-row-gap: 2.014vw;
     background-image: linear-gradient(#27282c,#26272b);
-    padding-left: 2em;
+    padding-left: 1vw;
 }
 .black{
-	height: 600px;
-	width: 350px;
+	height: 35.28vw;
+	width: 23.5vw;
 	background-color: black;
 	margin: auto;
 	margin-top: 0;

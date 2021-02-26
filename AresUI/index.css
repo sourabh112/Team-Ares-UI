@@ -667,6 +667,47 @@ on #pointer:before */
   margin-left: -5px; margin-top: -5px;
 }
 
+/*Keyboard keys*/
+.rotations-grid {
+  display: grid;
+  margin: 0 auto;
+  margin-top: 15%;
+  width: 120px;
+  height: 120px;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+  grid-template-areas: ". rotate-top ." "rotate-left . rotate-right" ". rotate-bottom .";
+}
+.rotations-grid button {
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+.rotations-grid button:hover {
+  background-color: #fafafa;
+}
+.rotations-grid button ion-icon {
+  color: #555;
+}
+.rotations-grid #rotateLeft {
+  grid-area: rotate-left;
+}
+.rotations-grid #rotateTop {
+  grid-area: rotate-top;
+}
+.rotations-grid #rotateBottom {
+  grid-area: rotate-bottom;
+}
+.rotations-grid #rotateRight {
+  grid-area: rotate-right;
+}
+
 
 
 

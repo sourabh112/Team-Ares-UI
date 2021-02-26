@@ -51,3 +51,32 @@
                               </span>
                             </div>
                       </div>
+
+
+                              // Replaced by Keyboard controls
+
+                              <!--<label class="switch" style="margin-left:33%;margin-top: 24%;">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                          </label>
+                        <p class="direction-information" style="margin-left:32%; margin-top: 10%;">ON / OFF</p>-->
+                          <!--<div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block">FORWARD</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span >
+                                <button type="button" class="btn btn-primary btn-block center-block">BACKWARD</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span>
+                                <button type="button" class="btn btn-primary pull-right btn-block">LEFT</button>
+                              </span>
+                            </div>
+                            <div class="col-md-12 btn-vert-block spacing-control-buttons">
+                              <span>
+                                <button type="button" class="btn btn-primary pull-right btn-block">RIGHT</button>
+                              </span>
+                            </div>-->

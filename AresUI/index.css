@@ -546,15 +546,6 @@ Time for some gloss and other fancy stuff.
 }
 
 /* A bit of animation on hover would be nice too! */
-#compass:hover {
-  transform: skewX(-5deg) skewY(-2deg);
-  
-  box-shadow:
-    0 0 4px #000,
-    0 0 1px 8px #ccc,
-    8px 12px 3px 5px #666,
-    20px 28px 20px #afa9d7;
-}
 
 #compass:before {
   content: '';
@@ -620,8 +611,8 @@ Time for some gloss and other fancy stuff.
   left: 50%; top: 50%;
   margin-left: -30px; margin-top: -15px;
   
-  /*background: black;*/
-  animation: rotate 5s cubic-bezier(1,.2,.5,1) infinite alternate;
+    /*Compass rotating animation*/
+  animation: rotate 5s infinite alternate;
 }
 
 /* Now the trick i wanna use to create a diamond
@@ -667,6 +658,12 @@ on #pointer:before */
   margin-left: -5px; margin-top: -5px;
 }
 
+
+
+
+
+
+
 /*Keyboard keys*/
 .rotations-grid {
   display: grid;
@@ -688,9 +685,6 @@ on #pointer:before */
   align-items: center;
   justify-content: center;
   z-index: 20;
-}
-.rotations-grid button:hover {
-  background-color: #fafafa;
 }
 .rotations-grid button ion-icon {
   color: #555;
